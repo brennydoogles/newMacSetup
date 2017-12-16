@@ -6,7 +6,7 @@ customPathDirs=( "/usr/local/share/python" "~/bin" "~/.rvm/bin" )
 for pathDir in "${customPathDirs[@]}"
 do
     dir=$(bash -c "echo $pathDir")
-	if [ -f $dir ]; then
+	if [ -d $dir ]; then
         PATH="$dir":$PATH
     fi
 done
