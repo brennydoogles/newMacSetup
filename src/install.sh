@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # Discover the true location of our script:
 SOURCE="${BASH_SOURCE[0]}"
@@ -11,7 +11,7 @@ DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
 dotFileDir="${DIR}/dotFiles"
 
-dotFiles=( ".bash_profile" ".bash_alias" ".bashrc" ".profile" ".bash_function" )
+dotFiles=( ".bash_prompt" ".bash_profile" ".bash_alias" ".bashrc" ".profile" ".bash_function" )
 # Loop through the files and load them into the session if they exist
 for dotFile in "${dotFiles[@]}"
 do

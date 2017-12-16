@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 # Want to add some bash_completion files? Add them to this array
 bashCompletionFiles=( "/etc/bash_completion" "$(brew --prefix)/etc/bash_completion" )
 # Loop through the files and load them into the session if they exist
@@ -9,11 +9,6 @@ do
         source $file
     fi
 done
-
-#   Change Prompt
-#   ------------------------------------------------------------
-    export PS1="________________________________________________________________________________\n| \w @ \h (\u) \n| => "
-    export PS2="| => "
 
 #   Set Default Editor (change 'Nano' to the editor of your choice)
 #   ------------------------------------------------------------
