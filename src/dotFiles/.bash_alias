@@ -105,3 +105,9 @@
     alias editHosts='sudo edit /etc/hosts'                  # editHosts:        Edit /etc/hosts file
     alias herr='tail /var/log/httpd/error_log'              # herr:             Tails HTTP error logs
     alias apacheLogs="less +F /var/log/apache2/error_log"   # Apachelogs:   Shows apache error logs
+
+#   ---------------------------------------
+#     JAVA DEVELOPMENT
+#   ---------------------------------------
+    alias setJava8="setJavaVersion 1.8"   # setJava8:   Sets the current Java version to Java 8
+    alias setJava10="setJavaVersion 10"   # setJava10:   Sets the current Java version to Java 10
