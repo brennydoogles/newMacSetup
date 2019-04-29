@@ -48,20 +48,20 @@
 #   ---------------------------
     #   memHogsTop, memHogsPs:  Find memory hogs
     #   -----------------------------------------------------
-        alias memHogsTop='top -l 1 -o rsize | head -20'
-        alias memHogsPs='ps wwaxm -o pid,stat,vsize,rss,time,command | head -10'
+    alias memHogsTop='top -l 1 -o rsize | head -20'
+    alias memHogsPs='ps wwaxm -o pid,stat,vsize,rss,time,command | head -10'
     #   cpuHogs:  Find CPU hogs
     #   -----------------------------------------------------
-        alias cpu_hogs='ps wwaxr -o pid,stat,%cpu,time,command | head -10'
+    alias cpu_hogs='ps wwaxr -o pid,stat,%cpu,time,command | head -10'
     #   topForever:  Continual 'top' listing (every 10 seconds)
     #   -----------------------------------------------------
-        alias topForever='top -l 9999999 -s 10 -o cpu'
+    alias topForever='top -l 9999999 -s 10 -o cpu'
     #   ttop:  Recommended 'top' invocation to minimize resources
     #   ------------------------------------------------------------
     #       Taken from this macosxhints article
     #       http://www.macosxhints.com/article.php?story=20060816123853639
     #   ------------------------------------------------------------
-        alias ttop="top -R -F -s 10 -o rsize"
+    alias ttop="top -R -F -s 10 -o rsize"
 
 #   ---------------------------
 #     NETWORKING
@@ -83,18 +83,18 @@
     alias mountReadWrite='/sbin/mount -uw /'    # mountReadWrite:   For use when booted into single-user
     #   cleanupDS:  Recursively delete .DS_Store files
     #   -------------------------------------------------------------------
-        alias cleanupDS="find . -type f -name '*.DS_Store' -ls -delete"
+    alias cleanupDS="find . -type f -name '*.DS_Store' -ls -delete"
     #   finderShowHidden:   Show hidden files in Finder
     #   finderHideHidden:   Hide hidden files in Finder
     #   -------------------------------------------------------------------
-        alias finderShowHidden='defaults write com.apple.finder ShowAllFiles TRUE'
-        alias finderHideHidden='defaults write com.apple.finder ShowAllFiles FALSE'
+    alias finderShowHidden='defaults write com.apple.finder ShowAllFiles TRUE'
+    alias finderHideHidden='defaults write com.apple.finder ShowAllFiles FALSE'
     #   cleanupLS:  Clean up LaunchServices to remove duplicates in the "Open With" menu
     #   -----------------------------------------------------------------------------------
-        alias cleanupLS="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
+    alias cleanupLS="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
     #    screensaverDesktop: Run a screensaver on the Desktop
     #   -----------------------------------------------------------------------------------
-        alias screensaverDesktop='/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine -background'
+    alias screensaverDesktop='/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine -background'
 
 
 #   ---------------------------------------
@@ -106,8 +106,3 @@
     alias herr='tail /var/log/httpd/error_log'              # herr:             Tails HTTP error logs
     alias apacheLogs="less +F /var/log/apache2/error_log"   # Apachelogs:   Shows apache error logs
 
-#   ---------------------------------------
-#     JAVA DEVELOPMENT
-#   ---------------------------------------
-    alias setJava8="setJavaVersion 1.8"   # setJava8:   Sets the current Java version to Java 8
-    alias setJava10="setJavaVersion 10"   # setJava10:   Sets the current Java version to Java 10

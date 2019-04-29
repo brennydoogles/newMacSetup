@@ -11,7 +11,7 @@ DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
 dotFileDir="${DIR}/dotFiles"
 
-dotFiles=( ".bash_prompt" ".bash_profile" ".bash_alias" ".bashrc" ".profile" ".bash_function" )
+dotFiles=( ".bash_prompt" ".bash_profile" ".bash_alias" ".bashrc" ".profile" ".bash_function" ".java_profile" ".go_profile" )
 # Loop through the files and load them into the session if they exist
 for dotFile in "${dotFiles[@]}"
 do

@@ -1,0 +1,91 @@
+tap "beeftornado/rmtree"
+tap "caskroom/drivers"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-versions"
+tap "homebrew/core"
+tap "homebrew/services"
+cask "java"
+cask "java8"
+# Automatic configure script builder
+brew "autoconf"
+# Tool for generating GNU Standards-compliant Makefiles
+brew "automake"
+# General-purpose data compression with high compression ratio
+brew "xz"
+# Cross-platform make
+brew "cmake"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Go dependency management tool
+brew "dep"
+# Pack, ship and run any application as a lightweight container
+brew "docker", link: false
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
+# Distributed revision control system
+brew "git"
+# Open-source build automation tool based on the Groovy and Kotlin DSL
+brew "gradle"
+# Command-line client for the cloud PaaS
+brew "heroku"
+# Common error values for all GnuPG components
+brew "libgpg-error"
+# X.509 and CMS library
+brew "libksba"
+# Generic library support script
+brew "libtool"
+# YAML Parser
+brew "libyaml"
+# Mac App Store command-line interface
+brew "mas"
+# Java-based project management
+brew "maven"
+# Open source relational database management system
+brew "mysql", restart_service: true, link: false
+# Open source relational database management system
+brew "mysql@5.7", link: true
+# Manage compile and link flags for libraries
+brew "pkg-config"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Internet file retriever
+brew "wget"
+# Download YouTube videos from the command-line
+brew "youtube-dl"
+# General-purpose lossless data-compression library
+brew "zlib"
+cask "adobe-acrobat"
+cask "adobe-reader"
+cask "airflow"
+cask "atom"
+cask "docker"
+cask "dupeguru"
+cask "etcher"
+cask "evernote"
+cask "firefox"
+cask "foreman"
+cask "itsycal"
+cask "java11"
+cask "launchcontrol"
+cask "marshallofsound-google-play-music-player"
+cask "mysqlworkbench"
+cask "nestopia"
+cask "onyx"
+cask "postman"
+cask "shiftit"
+cask "slack"
+cask "soundflower"
+cask "the-unarchiver"
+cask "whatsapp"
+cask "xquartz"
+mas "com.apple.dt.Xcode", id: 497799835
+mas "com.apple.garageband10", id: 682658836
+mas "com.apple.iMovieApp", id: 408981434
+mas "com.apple.iWork.Keynote", id: 409183694
+mas "com.apple.iWork.Numbers", id: 409203825
+mas "com.apple.iWork.Pages", id: 409201541
+mas "com.microsoft.OneDrive-mac", id: 823766827
+mas "com.ookla.speedtest-macos", id: 1153157709
